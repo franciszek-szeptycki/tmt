@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -8,7 +6,7 @@ function App() {
 
   fetch("https://tmt-u6cv.onrender.com/")
     .then(res => res.ok)
-    .then(data => setStatus("OK"))
+    .then(() => setStatus("OK"))
     .catch(() => setStatus("Error connecting to backend."))
 
   return (
