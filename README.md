@@ -1,6 +1,6 @@
 ## Links
-frontend: https://tmt-franciszek.vercel.app/
-backend: https://tmt-u6cv.onrender.com/
+- frontend: https://tmt-franciszek.vercel.app/
+- backend: https://tmt-u6cv.onrender.com/
 
 ## Techstack
 ### Backend
