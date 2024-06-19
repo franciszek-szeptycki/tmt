@@ -16,6 +16,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+    'users',
+    'rest_framework_simplejwt',
 ]
 
 MIDDLEWARE = [
@@ -81,3 +83,9 @@ ALLOWED_HOSTS = ['*']
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
