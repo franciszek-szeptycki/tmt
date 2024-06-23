@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState } from 'react' 
 import './App.css'
+import AuthPage from './views/authPage'
 
-function App() {
+export default function App() {
   const [status, setStatus] = useState("...")
 
   fetch("https://tmt-u6cv.onrender.com/")
@@ -10,8 +11,8 @@ function App() {
     .catch(() => setStatus("Error connecting to backend."))
 
   return (
-    <h1>Backend connection status: {status}</h1>
+    <AuthPage/>
   )
 }
 
-export default App
+
