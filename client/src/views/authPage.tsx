@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import { useState } from "react";
 import AuthForm from "../components/auth/authForm";
 
 export default function AuthPage() {

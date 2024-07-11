@@ -9,7 +9,7 @@ export default function App() {
     .then(res => res.ok)
     .then(() => setStatus("OK"))
     .catch(() => setStatus("Error connecting to backend."))
-
+    console.log(status)
   return (
     <AuthPage/>
   )
