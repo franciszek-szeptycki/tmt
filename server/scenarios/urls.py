@@ -1,15 +1,11 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
-from scenarios.infrastructure.views.project_view import ProjectViewSet
+from scenarios.infrastructure.views.directory_view import DirectoryView
 
-projects = DefaultRouter(trailing_slash=False)
-projects.register(
-    "items",
-    ProjectViewSet,
-    basename="projects_items",
-)
+directories = DefaultRouter()
+directories.register(r'items', DirectoryView)
 
 urlpatterns = [
-    path("projects/", include(projects.urls)),
+    path('directories/', include(directories.urls)),
 ]
